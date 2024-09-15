@@ -37,6 +37,11 @@ img {
 }
 
 .slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 0;
   min-width: 200px;
   max-width: 500px;
   margin: 20px;
@@ -55,13 +60,19 @@ img {
 }
 
 .description-wrapper {
-  display: flex;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
 }
 
 .description {
-  min-width: 100%
+  display: flex;
+  max-width: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.text {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .labels-wrapper {
@@ -94,18 +105,22 @@ img {
   background-color: blue;
   border: 2px solid red;
 }
+
 #meme-second:checked ~ .labels-wrapper label[for="meme-second"] {
   background-color: blue;
   border: 2px solid red;
 }
+
 #meme-third:checked ~ .labels-wrapper label[for="meme-third"] {
   background-color: blue;
   border: 2px solid red;
 }
+
 #meme-fourth:checked ~ .labels-wrapper label[for="meme-fourth"] {
   background-color: blue;
   border: 2px solid red;
 }
+
 #meme-fifth:checked ~ .labels-wrapper label[for="meme-fifth"] {
   background-color: blue;
   border: 2px solid red;
@@ -128,5 +143,25 @@ img {
 }
 
 #meme-fifth:checked ~ .slider {
+  margin-left: -400%;
+}
+
+#meme-first:checked ~ .description-wrapper .description {
+  margin-left: 0;
+}
+
+#meme-second:checked ~ .description-wrapper .description {
+  margin-left: -100%;
+}
+
+#meme-third:checked ~ .description-wrapper .description {
+  margin-left: -200%;
+}
+
+#meme-fourth:checked ~ .description-wrapper .description {
+  margin-left: -300%;
+}
+
+#meme-fifth:checked ~ .description-wrapper .description {
   margin-left: -400%;
 }
