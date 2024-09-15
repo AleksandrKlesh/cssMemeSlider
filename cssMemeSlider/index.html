@@ -3,42 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Css Meme Slider</title>
 </head>
 <body>
   <main>
-    <div class="slider-wrapper">
-      <div class="slider">
-        <div class="image-wrapper">
-          <img src="./assets/img/crowdstrike.png" alt="spider-men point at each other">
+    <div class="container">
+      <div class="slider-wrapper">
+        <input class="radio" type="radio" name="meme" id="meme-first" checked>
+        <input class="radio" type="radio" name="meme" id="meme-second">
+        <input class="radio" type="radio" name="meme" id="meme-third">
+        <input class="radio" type="radio" name="meme" id="meme-fourth">
+        <input class="radio" type="radio" name="meme" id="meme-fifth">
+        <div class="slider" id="slider">
+          <div class="image-wrapper">
+            <img src="./assets/img/crowdstrike.png" alt="Spider-men point at each other">
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/img/discord-help.jpg" alt="Spider-man is whispering">
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/img/avoid-force.jpg" alt="Fry is suspecting">
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/img/layout-picture.jpg" alt="Genius mind">
+          </div>
+          <div class="image-wrapper">
+            <img src="./assets/img/senior-see-junior.jpeg" alt="Spider-man covers his ears">
+          </div>
         </div>
-        <div class="image-wrapper">
-          <img src="./assets/img/discord-help.jpg" alt="spider-man is whispering">
+        <div class="description-wrapper">
+          <p class="description">Developers at CrowdStrike during outage</p>
+          <p class="description">The one on discord who helps with an advise</p>
+          <p class="description">How to solve git push issue without --force</p>
+          <p class="description">When added an image of a layout instead of layout</p>
+          <p class="description">How seniors see juniors during meetings</p>
         </div>
-        <div class="image-wrapper">
-          <img src="./assets/img/avoid-force.jpg" alt="Fry is suspecting">
-        </div>
-        <div class="image-wrapper">
-          <img src="./assets/img/layout-picture.jpg" alt="Genius mind">
-        </div>
-        <div class="image-wrapper">
-          <img src="./assets/img/layout-picture.jpg" alt="Genius mind">
+        <div class="labels-wrapper">
+          <label class="label" for="meme-first"><span></span></label>
+          <label class="label" for="meme-second"><span></span></label>
+          <label class="label" for="meme-third"><span></span></label>
+          <label class="label" for="meme-fourth"><span></span></label>
+          <label class="label" for="meme-fifth"><span></span></label>
         </div>
       </div>
-    </div>
-    <div class="labels-wrapper">
-      <label for="meme-first">FIrst</label>
-      <label for="meme-second">Second</label>
-      <label for="meme-third">Third</label>
-      <label for="meme-fourth">Fourth</label>
-      <label for="meme-fifth">Fifth</label>
-    </div>
-    <div class="radio-wrapper">
-      <input type="radio" name="meme" id="meme-first" checked>
-      <input type="radio" name="meme" id="meme-second">
-      <input type="radio" name="meme" id="meme-third">
-      <input type="radio" name="meme" id="meme-fourth">
-      <input type="radio" name="meme" id="meme-fifth">
     </div>
   </main>
 </body>
